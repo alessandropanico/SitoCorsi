@@ -1,0 +1,51 @@
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px;
+}
+
+.testoCard {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.card-text {
+    color: white;
+}
+
+   /* Aggiunto stile per ridimensionare il video */
+   .video-container {
+    width: 1200px; /* Imposta la larghezza desiderata */
+    height: auto; /* Imposta l'altezza in modo proporzionale */
+    margin: 0 auto; /* Centra il video orizzontalmente */
+    filter: brightness(0.8);
+    z-index: 1000;
+}
+
+/* Impedisce che il video venga ridimensionato più piccolo della larghezza specificata */
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sovrapposizione sull'overlay del video */
+.video-overlay {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay .neonText {
+    font-size: 24px;
+    color: white;
+}
+

@@ -1,0 +1,38 @@
+.image-container {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Aggiungi la transizione sull'opacità */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 10px;
+}
+
+.col-md-6 {
+    position: relative;
+}
+
+
+.testo2 {
+    position: relative;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    font-size: 15px;
+    background: linear-gradient(to bottom, #000 50%, rgba(128, 128, 128, 0.7) 50%);
+    background-size: 100% 200%; /* Altezza del gradiente doppia rispetto all'elemento */
+    transition: background-position 0.5s ease; /* Aumenta la durata della transizione */
+}
+
+.testo2:hover {
+    background-position: 0 100%; /* Muovi il gradiente verso il basso durante il passaggio del mouse */
+}
+
+.imgTog{
+
+    width: 300px;
+    margin-left:100px;
+    z-index: 9999;
+    position: absolute;
+    margin-top:-50px;
+}
+

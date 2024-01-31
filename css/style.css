@@ -1,0 +1,292 @@
+.custom-navbar {
+    background-color: transparent;
+    padding: 5px 0;
+    backdrop-filter: blur(10px);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    /* Aggiungi questa riga */
+    width: 100%;
+    /* Fai in modo che la navbar occupi l'intera larghezza */
+    top: 0;
+    /* Posiziona la navbar in cima alla pagina */
+    z-index: 9999;
+    /* Imposta un valore alto per assicurarti che la navbar sia sopra agli altri elementi */
+}
+
+.logo {
+    font-family: 'Cute Font', sans-serif;
+    font-size: 40px;
+    /* Riduci la dimensione del testo del logo */
+    font-weight: bold;
+    color: white;
+
+}
+
+.testo {
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px
+}
+
+
+
+
+.custom-navbar .logo {
+    font-size: 40px;
+    /* Riduci la dimensione del testo del logo */
+    font-weight: bold;
+    color: white;
+    font-family: 'Cute Font', sans-serif;
+}
+
+.custom-navbar .menu ul,
+.custom-navbar .social ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar .menu a,
+.custom-navbar .social a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    /* Riduci la dimensione del testo per una navbar più compatta */
+    margin-right: 10px;
+    /* Riduci il margine per avvicinare gli elementi */
+    display: block;
+    padding: 5px;
+}
+
+.custom-navbar .social i {
+    color: white;
+}
+
+/* Modifica per gestire la posizione degli elementi nel menu */
+.custom-navbar .menu {
+    margin-left: auto;
+}
+
+.custom-navbar .social {
+    margin-left: auto;
+}
+
+.custom-navbar .menu a:last-child,
+.custom-navbar .social a:last-child {
+    margin-right: 0;
+}
+
+/*--------------------------------*/
+
+
+.glowing-text {
+    color: white;
+    font-size: 50px;
+    animation: glowBorder 4s infinite;
+    font-family: 'Cute Font', sans-serif;
+}
+
+@keyframes glowBorder {
+    0% {
+        border-color: rgba(255, 102, 178, 0.9);
+        /* Rosa */
+    }
+
+    50% {
+        border-color: rgba(102, 163, 255, 0.9);
+        /* Blu */
+    }
+
+    100% {
+        border-color: rgba(255, 102, 178, 0.9);
+        /* Rosa */
+    }
+}
+
+/*---------------------*/
+
+.glowing-text {
+    color: rgba(243, 247, 0, 0.89);
+    font-size: 80px;
+    animation: glow 2s infinite;
+    /* Usa l'animazione glow definita nei keyframes */
+    font-family: 'Cute Font', sans-serif;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px rgba(243, 247, 0, 0.89);
+    }
+
+    50% {
+        text-shadow: 0 0 40px rgba(243, 247, 0, 0.89);
+        ;
+    }
+
+    100% {
+        text-shadow: 0 0 20px rgba(243, 247, 0, 0.89);
+        ;
+    }
+}
+
+
+/*---------------------*/
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(0.4);
+    /* Imposta il livello di luminosità, 0.5 renderà il video più scuro */
+}
+
+/*---------------------*/
+
+.btn-grad {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #ec08f4;
+    border-radius: 10px;
+    display: block;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*-----------------------------*/
+
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    }
+}
+
+.d-flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prova {
+    box-shadow:
+        0 0 10px rgba(255, 51, 153, 0.7),
+        0 0 20px rgba(255, 51, 153, 0.5),
+        0 0 30px rgba(255, 51, 153, 0.3),
+        0 0 40px rgba(51, 153, 255, 0.3),
+        0 0 50px rgba(51, 153, 255, 0.5),
+        0 0 60px rgba(51, 153, 255, 0.7);
+}
+
+.linea {
+
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(0, 153, 255, 0.7));
+    height: 4px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 51, 153, 0.7),
+        0 0 20px rgba(255, 51, 153, 0.5),
+        0 0 30px rgba(255, 51, 153, 0.3),
+        0 0 40px rgba(51, 153, 255, 0.3),
+        0 0 50px rgba(51, 153, 255, 0.5),
+        0 0 60px rgba(51, 153, 255, 0.7);
+    filter: saturate(200%);
+    /* Aumenta la saturazione del 100% */
+
+}
+
+
+/*FOOTER*/
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 40px 0;
+}
+
+.footer h4 {
+    color: #ff3399;
+    /* Colore rosa */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------------------*/
+
+.neonText {
+    color: rgb(0, 12, 245);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(0, 12, 245),
+        0 0 82px rgb(0, 12, 245),
+        0 0 92px rgb(0, 12, 245),
+        0 0 102px rgb(0, 12, 245),
+        0 0 151px rgb(0, 12, 245);
+}
+
+
+code {
+    font-size: 18px;
+}
+
+marquee {
+    position: absolute;
+    top: 0;
+    color: white;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 1200px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+a{
+    font-size: 30px;
+}
